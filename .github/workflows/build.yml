@@ -17,6 +17,8 @@ jobs:
         run: yarn
       - name: Test and coverage
         run: npx ng test --code-coverage
+      - name: List Directory
+        run: ls
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:
